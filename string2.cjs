@@ -1,5 +1,4 @@
 function string2(stringIs){
-
     let IPV4Array = []
     let validateIPV4 = false
     stringIs.split('.').forEach(element => {

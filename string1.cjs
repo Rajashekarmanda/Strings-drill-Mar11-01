@@ -1,18 +1,14 @@
-function string1 (stringIs){
-
-    let result =''
-    let countTest = 0
-
-    for (let eachWord of stringIs){
-        if (eachWord !== '$'){
-            result += eachWord
-            countTest++
-        }
-    }
-    if(countTest !== stringIs.length){
-        return result
-    }else{
+function string1(stringIs) {
+    if (/[a-zA-Z]/.test(stringIs) || stringIs == '' || typeof stringIs !== 'string') {
         return 0
-    }
+    } else {
+        let result = ''
+        for (let eachWord of stringIs) {
+            if (eachWord !== '$') {
+                result += eachWord
+            }
+        }
+        return result
+    };
 }
 module.exports = string1
