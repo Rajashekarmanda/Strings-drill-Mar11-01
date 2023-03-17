@@ -8,3 +8,5 @@ console.log(testCase1)
 
 console.log(string5([]))
 
+console.log(string5(''))
+

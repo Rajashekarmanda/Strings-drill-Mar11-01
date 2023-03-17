@@ -3,11 +3,7 @@ function string1(stringIs) {
         return 0
     } else {
         let result = ''
-        for (let eachWord of stringIs) {
-            if (eachWord !== '$') {
-                result += eachWord
-            }
-        }
+        for (let eachWord of stringIs) { eachWord !== '$' ? result += eachWord : ''}
         return result
     };
 }

@@ -1,13 +1,5 @@
 function string5(arrayToJoin){
-
-   if (arrayToJoin.length < 1 && Array.isArray(arrayToJoin)){
-    return ''
-   }else if (!Array.isArray(arrayToJoin)){
-    return ''
-   }
-   else {
-    return `${arrayToJoin.join(' ')}.`
-   }
-   
+   let modifiedString = (Array.isArray(arrayToJoin) && arrayToJoin.length >0) ? `${arrayToJoin.join(' ')}.` : " "
+   return modifiedString
 }
 module.exports = string5
