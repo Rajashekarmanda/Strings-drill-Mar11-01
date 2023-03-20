@@ -1,5 +1,4 @@
 function string3(dateFormat) {
-
     if (dateFormat == '' || dateFormat == undefined || dateFormat == null) {
         return undefined
     } else {
